@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/addtaskdialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Head"
+        style="@style/AlertDialog.AppCompat"/>
+    <EditText
+        android:id="@+id/addtaskhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AlertDialog.AppCompat"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task description"
+        style="@style/AlertDialog.AppCompat" />
+    <EditText
+        android:id="@+id/addtaskdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

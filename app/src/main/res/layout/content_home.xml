@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mahmod.saber.ieeecszsc.Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <RelativeLayout
+        android:id="@+id/Feed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_light_disabled"
+        android:elevation="1dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/refresh"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+            android:onClick="refresh"
+            android:textAllCaps="false" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/feedlist2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/button6" />
+
+    </RelativeLayout>
+</android.widget.RelativeLayout>
